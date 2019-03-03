@@ -40,12 +40,22 @@ def get_all_links(page):
             break
     return links
 
-def crawl_web(seed):
+# def crawl_web(seed):
+#     tocrawl = [seed]
+#     crawled = []
+#     while tocrawl:
+#         page = tocrawl.pop()
+#         if page not in crawled:
+#             union (tocrawl,get_all_links(get_page(page)))
+#             crawled.append(page)
+#     return crawled
+def crawl_web(seed, max_pages):
     tocrawl = [seed]
     crawled = []
-    while tocrawl:
+    while  tocrawl and len(crawled)<max_pages:
         page = tocrawl.pop()
         if page not in crawled:
-           union (tocrawl,get_all_links(get_page(page))
-           crawled.append(page)
+            union(tocrawl, get_all_links(get_page(page)))
+            crawled.append(page)
     return crawled
+print crawl_web ("http://www.udacity.com/cs101x/index.html",4)
