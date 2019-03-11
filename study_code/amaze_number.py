@@ -1,4 +1,4 @@
-def amaze_number (n):
+def amaze_number(n):
    all_list = []
    while n%2==0:
          n=n/2
@@ -13,7 +13,8 @@ def amaze_number (n):
        return all_list
    else:
        return None
+
 print amaze_number(1845281250)
-print amaze_number(3690562500)
-print amaze_number(1230187500)
-print amaze_number(10023750)
+# print amaze_number(3690562500)
+# print amaze_number(1230187500)
+# print amaze_number(10023750)

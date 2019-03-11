@@ -37,6 +37,7 @@ def check_sudoku(p):
            col_count = 0
            j = 0
            while j<n :
+               print p[i][j]
                if p[i][j] == digit:
                    row_count = row_count + 1
                if p[j][i] == digit:
