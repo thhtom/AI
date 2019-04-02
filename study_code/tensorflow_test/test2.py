@@ -7,6 +7,6 @@ a = tf.constant([3.0,3.0])
 
 x.initializer.run()
 
-sub = tf.sub(x,a)
+sub = tf.subtract(x,a)
 
 print (sub.eval())
